@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registrarse</h1>
+      <form class="formulario" id="formulario">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="Usuario"
+              name="Usuario"
+              placeholder="Nombre completo"
+              maxlength="30"
+            />
+            <span id="Usuario"></span>
+          </div>
+          <div class="user-input-box">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingrese Email"
+              maxlength="150"
+            />
+            <span id="Email"></span>
+          </div>
+          <div class="user-input-box">
+            <i class="fa-solid fa-phone"></i>
+            <input
+              type="text"
+              id="Telefono"
+              name="Telefono"
+              placeholder="Ingrese Telefono"
+            />
+            <span id="Telefono"></span>
+          </div>
+          <div class="user-input-box">
+            <input type="text" id="gustos" name="gustos" placeholder="Gusto" maxlength="30" />
+            <button id="agregarGusto" >Gustos</button>
+          </div>
+          
+          <div class="contain">
+            <table id="gusto_table">
+              <tr>
+                <th>Gustos</th>
+                <th>%</th>
+                <th>Edit</th>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="text" name="gustos1" id="gustos_box" disabled/>
+                </td>
+                <td>
+                  <input type="text" name="porcentaje1" id="porcentaje_box" disabled/>
+                </td>
+                <td>
+                  <button name="edit1" id="edit_box">Edit</button>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/formulario.js"></script>
+  </body>
+</html>
+
